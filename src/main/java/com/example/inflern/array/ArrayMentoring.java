@@ -16,10 +16,15 @@ public class ArrayMentoring {
                         if(arr[k][s] == i) pi = s;
                         if(arr[k][s] == j) pj = s;
                     }
-                    if(pi < pj) cnt++;
+                    if(pi < pj) {
+                        cnt++;
+                    }
                 }
 
-                if(cnt == testNum) answer++;
+                if(cnt == testNum) {
+                    answer++;
+                    System.out.println(i+","+j);
+                }
             }
         }
         return answer;
