@@ -5,6 +5,7 @@ public class ArrayLeader {
     private int solution(int num, int[][] leaderArr) {
         int answer = 0;
         int max = 0;
+        System.out.println(leaderArr[1][1]);
 
         for (int i = 1; i <= num; i++) {
             int cnt=0;
