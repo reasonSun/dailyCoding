@@ -6,6 +6,9 @@ public class ContinueSequenceMax {
         ContinueSequenceMax sequenceMax = new ContinueSequenceMax();
         int[] arr = {1,1,0,0,1,1,0,1,1,0,1,1,0,1};
         System.out.println(sequenceMax.solution(14, 2, arr));
+
+        int[] arr2 = {1,2,3,4,5};
+        System.out.println(sequenceMax.solution2(arr, 3));
     }
 
     private int solution(int num, int k, int[] arr) {
@@ -20,5 +23,17 @@ public class ContinueSequenceMax {
         }
 
         return answer;
+    }
+
+    public boolean solution2(int[] A, int K) {
+        int n = A.length;
+        for (int i = 0; i < n - 1; i++) {
+            if (A[i] + 1 < A[i + 1])
+                return false;
+        }
+        if (A[0] != 1 && A[n - 1] != K)
+            return false;
+        else
+            return true;
     }
 }
