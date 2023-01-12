@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CoinKnapsack {
     static int n, m;
-    static int[] dy;
+    static int[] dy; //i를 만드는데 드는 최소 동전 개수
     public int solution(int[] coin){
         Arrays.fill(dy, Integer.MAX_VALUE);
         dy[0]=0;
@@ -34,3 +34,8 @@ public class CoinKnapsack {
 1 2 5
 15
 * */
+
+/*
+10 4200
+1 5 10 50 100 500 1000 5000 10000 50000
+*/
