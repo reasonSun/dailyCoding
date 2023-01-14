@@ -12,8 +12,8 @@ class Time implements Comparable<Time> {
     }
     @Override
     public int compareTo(Time o){
-        if(this.e==o.e) return this.s-o.s;
-        else return this.e-o.e;
+        if(this.e==o.e) return this.s-o.s; //시작시간 오름차순
+        else return this.e-o.e; //끝나는시간 오름차순
     }
 }
 public class MeetingRoom {
@@ -38,7 +38,7 @@ public class MeetingRoom {
         for (Time ob : arr) {
             if (ob.s >= et) {
                 cnt++;
-                et = ob.s;
+                et = ob.e;
             }
         }
         return cnt;
