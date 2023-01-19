@@ -1,4 +1,4 @@
-package com.example.baekjoon;
+package com.example.baekjoon.bfs;
 
 import java.util.ArrayList;
 import java.util.Collections;

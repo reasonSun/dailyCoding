@@ -1,4 +1,4 @@
-package com.example.baekjoon;
+package com.example.baekjoon.dfs;
 
 import java.util.Scanner;
 
