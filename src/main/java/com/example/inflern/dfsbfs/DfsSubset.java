@@ -17,8 +17,8 @@ public class DfsSubset {
                 flag = true;
             }
         }else{
-            dfs(level + 1, sum + arr[level], arr);
-            dfs(level + 1, sum, arr);
+            dfs(level + 1, sum + arr[level], arr); //해당원소를 넣는 경우
+            dfs(level + 1, sum, arr); //해당 원소를 넣지 않는경우
         }
 
     }

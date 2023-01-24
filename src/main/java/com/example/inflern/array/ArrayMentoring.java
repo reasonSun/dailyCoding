@@ -7,6 +7,7 @@ public class ArrayMentoring {
     private int solution(int studentNum, int testNum, int[][] arr) {
         int answer =0;
 
+        // k = 테스트 수, s = 등수
         for (int i = 1; i <= studentNum; i++) {
             for (int j = 1; j <= studentNum; j++) {
                 int cnt =0;

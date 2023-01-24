@@ -15,7 +15,7 @@ public class BfsDistance {
         Scanner kb = new Scanner(System.in);
         n=kb.nextInt();
         m=kb.nextInt();
-        graph = new ArrayList<ArrayList<Integer>>();
+        graph = new ArrayList<>();
         for (int i = 0; i <= n; i++) {
             graph.add(new ArrayList<>());
         }
@@ -49,8 +49,6 @@ public class BfsDistance {
         }
     }
 }
-
-
 /*
 6 9
 1 3
