@@ -1,7 +1,5 @@
 package com.example.programmers;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Stack;
 
 public class DuplicationNumber {
