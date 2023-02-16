@@ -7,22 +7,15 @@ public class BinaryNextBigNum {
         System.out.println(num.solution(n));
     }
 
+    // toBinaryString을 사용해서 풀이했다가 효율성 통과를 하지 못했는데 Integer.bitCount()함수를 사용해서 통과 ->2진수의 1의 개수를 가져오는 변수
     private int solution(int n) {
 
-        String originBinary = Integer.toBinaryString(n);
-        long originCnt = originBinary.chars()
-                .filter(c -> c == '1')
-                .count();
-
-        long plusCnt = 0L;
+        int originCnt = Integer.bitCount(n);
+        int plusCnt = 0;
         int plusNum = n;
-        String plusBinary = "";
         while (originCnt != plusCnt) {
             plusNum++;
-            plusBinary = Integer.toBinaryString(plusNum);
-            plusCnt = plusBinary.chars()
-                    .filter(c -> c=='1')
-                    .count();
+            plusCnt = Integer.bitCount(plusNum);
         }
 
         return plusNum;
